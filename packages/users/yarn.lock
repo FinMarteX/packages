@@ -10,6 +10,21 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
+"@aws-sdk/lib-dynamodb@3.382.0":
+  version "3.382.0"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/lib-dynamodb/-/lib-dynamodb-3.382.0.tgz#76ae8bca5ebcac51ccf5d28d0bf4f03becd4e452"
+  integrity sha512-vi8fRdOpb+/Ii2CCOOchgcPtZ3IcVhT4vZchg1rDq/6MdIN9PX2Fe2j+rmxdovL7PpIw/Kh4XKe1A2Uh9T+fDQ==
+  dependencies:
+    "@aws-sdk/util-dynamodb" "3.382.0"
+    tslib "^2.5.0"
+
+"@aws-sdk/util-dynamodb@3.382.0":
+  version "3.382.0"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/util-dynamodb/-/util-dynamodb-3.382.0.tgz#7f1b789b09c29e6c4a3548511a9fa2f2860d1a33"
+  integrity sha512-9Hlk8M1xprs6MWiBhr0tKZIiP4lxnnjcT/WTIvs/9p8YCal2byI6O7MSkae5nBh3g34the4CGbyAcqvEF4D+Yg==
+  dependencies:
+    tslib "^2.5.0"
+
 "@aws/dynamodb-auto-marshaller@^0.7.1":
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/@aws/dynamodb-auto-marshaller/-/dynamodb-auto-marshaller-0.7.1.tgz#70676c056e4ecb798c08ec2e398a3d93e703858d"
@@ -952,20 +967,21 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@finmartex/common-ddb@1.1.7":
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/@finmartex/common-ddb/-/common-ddb-1.1.7.tgz#4e68954674cfd1df937289f083111ad343449e8f"
-  integrity sha512-AV9cq0jjA2x4qCPLihpibUl737RwQo1fR5WRhC19NrRDCxsVxOvC/i0g7o6BAvTMiJ5HbAe7uwimW3PGwkv0lg==
+"@fintex/common-ddb@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@fintex/common-ddb/-/common-ddb-1.0.1.tgz#6d348b87e8ba18af4ef9f0a3995c703d43fb49e6"
+  integrity sha512-EEo0zTG/Zy8sJ/D7ULuVMxQcOBK0Mqh4Eb7rocSx7OSdcw2Wg0xpR+ZUYVulMTFMK+30fyZvmyKnj8lls5upWA==
   dependencies:
+    "@aws-sdk/lib-dynamodb" "3.382.0"
     "@aws/dynamodb-expressions" "0.7.3"
     aws-sdk "2.1152.0"
     lodash "4.17.21"
     p-map "4.0.0"
 
-"@finmartex/types-ddb@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@finmartex/types-ddb/-/types-ddb-1.0.3.tgz#28e4d78e6846076df4bb01acd26accd4f541bb8f"
-  integrity sha512-zM2r/fLi0RootqFtD92ffQxMK3SUyQ8c77WeexqQ5pbl9VAPqvxHR3KA4gJrXlBygIORbRpbZuDua+vFNMrzAg==
+"@fintex/types-ddb@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@fintex/types-ddb/-/types-ddb-1.0.0.tgz#216e4e397bf1038a6c4d9f0edd059b017d5728d1"
+  integrity sha512-TfO+dJw7qoywn/5FofkyiOevNt6j0d4MVThauHjS5u31K8TYk3Hj1Dn7+drKK1TYrNzjSYKJZbKn8TmALZZ7NA==
 
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
@@ -1664,6 +1680,11 @@ tslib@^1.8.1:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
+
+tslib@^2.5.0:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.2.tgz#703ac29425e7b37cd6fd456e92404d46d1f3e4ae"
+  integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
 
 typescript@4.7.3:
   version "4.7.3"

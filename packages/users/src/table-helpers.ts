@@ -1,4 +1,4 @@
-import type {DDB, Users} from '@finmartex/types-ddb';
+import type {DDB, Users} from '@fintex/types-ddb';
 
 export const tableName = 'users';
 export const indexTableName = 'GSI1-index';

@@ -1,5 +1,5 @@
-import {find, fromDDBItem} from '@finmartex/common-ddb';
-import type {Users} from '@finmartex/types-ddb';
+import {find, fromDDBItem} from '@fintex/common-ddb';
+import type {Users} from '@fintex/types-ddb';
 import {getUserGSI1HK, getUserGSI1RK, indexTableName, tableName} from '../../table-helpers';
 
 export async function getUserByEmail(email: string): Promise<Users.User | undefined> {

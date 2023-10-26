@@ -1,5 +1,5 @@
 import {unset} from 'lodash';
-import {DDB} from '@finmartex/types-ddb';
+import {DDB} from '@fintex/types-ddb';
 
 export function fromDDBItem<T>(item: T & DDB.DDBItemDefaults): DDB.ItemWithoutDDBDefaults<T> {
   stripHashRangeKeys(item);

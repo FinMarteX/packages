@@ -1,18 +1,17 @@
 import type {DocumentClient} from 'aws-sdk/lib/dynamodb/document_client';
 import {put} from '../ddb';
-import {PutItemInputAttributeMap} from 'aws-sdk/clients/dynamodb';
 
-type InsertOneParams<T> = {
-  Item: T;
-  uniqValidationKey?: keyof T;
+type InsertOneParams = {
+  Item: any;
+  uniqValidationKey?: any;
   TableName: string;
 };
 
-export async function insertOne<T extends PutItemInputAttributeMap>({
+export async function insertOne({
   Item,
   uniqValidationKey,
   TableName,
-}: InsertOneParams<T>): Promise<void> {
+}: InsertOneParams): Promise<void> {
   const insertParams: DocumentClient.PutItemInput = {
     TableName,
     Item,

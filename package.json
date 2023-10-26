@@ -5,6 +5,7 @@
   "repository": "https://github.com/FinMarteX/packages.git",
   "author": "Maksym-Haiovets <makcumyt@gmail.com>",
   "license": "MIT",
+  "private": false,
   "scripts": {
     "build-common-ddb": "cd packages/common-ddb && yarn && yarn build",
     "build-types-ddb": "cd packages/types && yarn && yarn build",

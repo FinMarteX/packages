@@ -1,6 +1,12 @@
-import {insertOne} from '@finmartex/common-ddb';
-import type {Users} from '@finmartex/types-ddb';
-import {getUserFacetKeys, getUserFacetType, getUserGSIFacetKeys, tableName} from '../../table-helpers';
+
+import {insertOne} from '@fintex/common-ddb';
+import type {Users} from '@fintex/types-ddb';
+import {
+  getUserFacetKeys,
+  getUserFacetType,
+  getUserGSIFacetKeys,
+  tableName,
+} from '../../table-helpers';
 
 export async function createUser(user: Users.User): Promise<void> {
   const {id, email} = user;
