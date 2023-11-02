@@ -12,6 +12,7 @@ export async function createLead(lead: Leads.Lead): Promise<void> {
   const item: Leads.DDBLeadFacet = {
     ...getLeadFacetKeys( email, country),
     ...lead,
+    createdAt: new Date().toISOString(),
     facetType: getUserFacetType(),
   };
 
