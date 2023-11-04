@@ -8,6 +8,7 @@ export type DDBLeadFacet = Lead & {
 
 export type Lead = {
   id: string;
+  userId: string;
   email: string;
   firstName: string;
   lastName: string;

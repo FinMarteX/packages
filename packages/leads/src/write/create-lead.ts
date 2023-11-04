@@ -7,11 +7,11 @@ import {
 } from '../table-helpers';
 
 export async function createLead(lead: Leads.Lead): Promise<void> {
-  const {country, id} = lead;
+  const {country, id, userId} = lead;
 
   const item: Leads.DDBLeadFacet = {
     ...lead,
-    ...getLeadFacetKeys(id, country),
+    ...getLeadFacetKeys(userId, id, country),
     facetType: getUserFacetType(),
   };
 

@@ -989,10 +989,10 @@
     lodash "4.17.21"
     p-map "4.0.0"
 
-"@fintex/types-ddb@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@fintex/types-ddb/-/types-ddb-1.1.1.tgz#6bfa7798daebf5f4fc96b4b37dd6794e61fae8ae"
-  integrity sha512-ZAeE8IYYBRwNtepS0ADVZFnZC4J2IeR3aan9ouQmCJJav/Js1SW1gFLUYAIOyANbZZ0I8emJlzjZH8A6KA2gpQ==
+"@fintex/types-ddb@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@fintex/types-ddb/-/types-ddb-1.1.2.tgz#2c8d202fa72bd962ed6a30950eb6247934125293"
+  integrity sha512-sPUp5flvG0U8kWVnfcpz0RX5YSEewxJc2B6VI9Aj+ymsFqx8AqbuizBabWZfuNMxaF0wJ3DA4b3jQVRLWSpt/g==
 
 "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
