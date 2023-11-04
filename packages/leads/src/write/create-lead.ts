@@ -7,12 +7,11 @@ import {
 } from '../table-helpers';
 
 export async function createLead(lead: Leads.Lead): Promise<void> {
-  const {email, country} = lead;
+  const {country, id} = lead;
 
   const item: Leads.DDBLeadFacet = {
-    ...getLeadFacetKeys( email, country),
     ...lead,
-    createdAt: new Date().toISOString(),
+    ...getLeadFacetKeys(id, country),
     facetType: getUserFacetType(),
   };
 

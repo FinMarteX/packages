@@ -5,9 +5,7 @@ export const tableName = 'leads';
 export const LEAD_PREFIX = 'lead';
 export const LEAD_FACET_TYPE = 'Lead';
 
-export function getLeadFacetKeys(email: string, country: string): DDB.FacetKeys {
-  const leadId = Buffer.from(email).toString('base64');
-
+export function getLeadFacetKeys(leadId: string, country: string): DDB.FacetKeys {
   return {
     hash_key: getLeadHashKey(leadId),
     range_key: getLeadRangeKey(country),
