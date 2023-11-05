@@ -1,1 +1,3 @@
-export * from './sqs';
+import * as sqs from './sqs';
+
+export {sqs};
