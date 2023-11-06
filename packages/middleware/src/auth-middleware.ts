@@ -47,8 +47,6 @@ export default function(): middy.MiddlewareObj<any, any, any, Context> {
     if (req.event.headers['x-api-key'] || req.event.headers['X-API-KEY']) {
       req.event.body = omit(req.event.body, ['login', 'password']);
       req.event.requestContext.authorizer = {userId: 'fintex-manualy', affiliateId: 'FinTex'};
-      // todo: remove this line
-      req.event.body['userId'] = 'fintex-manualy';
 
       return;
     }
@@ -60,11 +58,9 @@ export default function(): middy.MiddlewareObj<any, any, any, Context> {
     if (
       authorization
     ) {
-      req.event.body = omit(req.event.body, ['login', 'password']);
       const {userId, affiliateId = ''} = decode(authorization) as JwtTokenPayload;
       req.event.requestContext.authorizer = {userId, affiliateId};
-      // todo: remove this line
-      req.event.body['userId'] = userId;
+      req.event.body = omit(req.event.body, ['login', 'password']);
 
       return;
     }
@@ -73,10 +69,9 @@ export default function(): middy.MiddlewareObj<any, any, any, Context> {
     const user = await getUserByEmail(email);
 
     validate({user, password});
+
     req.event.body = omit(req.event.body, ['login', 'password']);
     req.event.requestContext.authorizer = {userId: user!.id, affiliateId: user!.affiliateId};
-    // todo: remove this line
-    req.event.body['userId'] = user!.id;
 
     return;
   };
