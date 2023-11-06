@@ -1,0 +1,33 @@
+{
+  "name": "@fintex/middleware",
+  "version": "1.0.0",
+  "main": "lib/",
+  "license": "MIT",
+  "author": "Maksym-Haiovets <makcumyt@gmail.com>",
+  "repository": "https://github.com/FinMarteX/packages.git",
+  "private": false,
+  "scripts": {
+    "build": "yarn build:types && babel src --out-dir lib --extensions '.ts' --copy-files --no-copy-ignored",
+    "build:types": "tsc -p tsconfig.types.json"
+  },
+  "dependencies": {
+    "@fintex/users-ddb": "1.1.0",
+    "@middy/core": "3.0.4",
+    "bcryptjs": "2.4.3",
+    "http-errors": "2.0.0",
+    "jsonwebtoken": "8.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.17.10",
+    "@babel/core": "7.18.5",
+    "@babel/preset-env": "7.18.2",
+    "@babel/preset-typescript": "7.17.12",
+    "@fintex/types-ddb": "1.2.0",
+    "@types/aws-lambda": "^8.10.100",
+    "@types/bcryptjs": "2.4.2",
+    "@types/http-errors": "1.8.2",
+    "@types/jsonwebtoken": "8.5.8",
+    "@types/lodash": "4.14.182",
+    "typescript": "4.7.3"
+  }
+}
