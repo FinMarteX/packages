@@ -12,7 +12,7 @@ export async function createUser(user: Users.User): Promise<void> {
   const {id, email} = user;
 
   const item: Users.DDBUserFacet = {
-    ...getUserFacetKeys(id, email),
+    ...getUserFacetKeys(id),
     ...getUserGSIFacetKeys(email),
     ...user,
     facetType: getUserFacetType(),

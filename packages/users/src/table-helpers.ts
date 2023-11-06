@@ -6,10 +6,10 @@ export const indexTableName = 'GSI1-index';
 export const USER_PREFIX = 'user';
 export const USER_FACET_TYPE = 'User';
 
-export function getUserFacetKeys(userId: string, email: string): DDB.FacetKeys {
+export function getUserFacetKeys(userId: string): DDB.FacetKeys {
   return {
     hash_key: getUserHashKey(userId),
-    range_key: getUserRangeKey(email),
+    range_key: getUserRangeKey(),
   };
 }
 
@@ -17,8 +17,8 @@ export function getUserHashKey(userId: string): string {
   return `${USER_PREFIX}#${userId}`;
 }
 
-export function getUserRangeKey(email: string): string {
-  return `${USER_PREFIX}#${email}`;
+export function getUserRangeKey(): string {
+  return `${USER_PREFIX}`;
 }
 
 export function getUserGSIFacetKeys(email: string): DDB.FacetGSIKeys {

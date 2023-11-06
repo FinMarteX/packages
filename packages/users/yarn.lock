@@ -978,10 +978,10 @@
     lodash "4.17.21"
     p-map "4.0.0"
 
-"@fintex/types-ddb@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@fintex/types-ddb/-/types-ddb-1.0.0.tgz#216e4e397bf1038a6c4d9f0edd059b017d5728d1"
-  integrity sha512-TfO+dJw7qoywn/5FofkyiOevNt6j0d4MVThauHjS5u31K8TYk3Hj1Dn7+drKK1TYrNzjSYKJZbKn8TmALZZ7NA==
+"@fintex/types-ddb@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@fintex/types-ddb/-/types-ddb-1.2.0.tgz#27ff86e2d97be56ce016817c05cacfb682368afe"
+  integrity sha512-a10qVjpcrengLNxiP9uC64r3gkrdnuI42fDZyv5vQYBKkPEjlhQSPXPEGRfRgWslAj/cXaiedMxpRmJLcDkYmw==
 
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
