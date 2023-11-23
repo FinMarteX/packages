@@ -16,6 +16,7 @@ export type Lead = {
   country: string;
   phonePrefix: string;
   phone: string;
+  fullPhone: string;
   ip: string;
   createdAt: string;
   updatedAt?: string;
