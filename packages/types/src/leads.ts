@@ -28,4 +28,5 @@ export type Lead = {
   adSetName?:string;
   campainId?: string;
   campainName?: string;
+  isVerifiedBySMS?: boolean;
 }
